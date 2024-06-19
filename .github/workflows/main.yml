@@ -42,7 +42,7 @@ jobs:
           # Options
           user: living-with-machines
           repo: mapreader
-          template: respository
+          template: repository
           filename: metrics.mapreader.svg
           config_timezone: Europe/London
           plugin_lines: yes
