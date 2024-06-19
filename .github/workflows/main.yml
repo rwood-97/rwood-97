@@ -37,3 +37,26 @@ jobs:
           plugin_stargazers_charts: yes
           plugin_stargazers_charts_type: graph
           plugin_stargazers_days: 14
+      - uses: lowlighter/metrics@latest
+        with:
+          # Your GitHub token
+          # The following scopes are required:
+          #  - public_access (default scope)
+          # The following additional scopes may be required:
+          #  - read:org      (for organization related metrics)
+          #  - read:user     (for user related data)
+          #  - read:packages (for some packages related data)
+          #  - repo          (optional, if you want to include private repositories)
+          token: ${{ secrets.METRICS_TOKEN }}
+
+          # Options
+          user: living-with-machines
+          repo: mapreader
+          template: respository
+          filename: metrics.mapreader.svg
+          plugin_lines: yes
+          plugin_lines_history_limit: 3
+          plugin_followup: yes
+          plugin_stargazers: yes
+          plugin_stargazers_charts_type: graph
+          
