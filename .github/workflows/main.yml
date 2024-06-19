@@ -41,7 +41,7 @@ jobs:
 
           # Options
           user: living-with-machines
-          repo: mapreader
+          repo: MapReader
           template: repository
           filename: metrics.mapreader.svg
           config_timezone: Europe/London
