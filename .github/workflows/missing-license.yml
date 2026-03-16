@@ -10,5 +10,5 @@ jobs:
       - uses: alan-turing-institute/missing-license@main
         with:
           gh_token: ${{ secrets.PAT }}
-          organization: rwood-97
+          organization: alan-turing-institute
           dry_run: "true"
